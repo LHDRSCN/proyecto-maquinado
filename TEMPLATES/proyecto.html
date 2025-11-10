@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Proyecto: {{ nombre_proyecto }}</h2>
+{% for numero_parte, operaciones in proyecto.partes.items() %}
+    <div class="numero-parte">
+        <h3>Número de Parte: {{ numero_parte }}</h3>
+        <a href="{{ url_for('editar_numero_parte', proyecto=nombre_proyecto, numero_parte=numero_parte) }}">✏️ Editar</a>
+        {% for operacion, herramientas in operaciones.items() %}
+            <h4>Operación: {{ operacion }}</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Herramienta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for idx, h in enumerate(herramientas, start=1) %}
+                    <tr>
+                        <td>{{ idx }}</td>
+                        <td>{{ h }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+    </div>
+{% endfor %}
+{% endblock %}

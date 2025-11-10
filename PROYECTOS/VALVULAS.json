@@ -1,0 +1,22 @@
+{
+  "proyecto": "VALVULAS",
+  "tipo_maquina": "FRESADORA",
+  "partes": {
+    "SE-003-2 (OPERACION 1)": [
+      "INSERTO DE VOLADOR (KC725M)",
+      "SPOT DRILL 1/2",
+      "DRILL 13/32",
+      "BROCA 19/32",
+      "ENDMILL 0.500 (CAREO DE ORILLAS)",
+      "ENDMILL 0.500 (CONTORNOS EXTERIORES LATERALES)",
+      "ENDMILL .500 (CAJAS .420)",
+      "DRILL 6.8 MM",
+      "DRILL 0.1875",
+      "ENDMILL .094 IN (FLAT P RANURA)",
+      "ENDMILL TIP 3/8 (AVELLANADO CAJAS .5937)",
+      "KTIP 15.5 MM (DESAHOGO CENTRAL)",
+      "ENDMILL 3/8  (ACABADO)",
+      "ENDMILL 1/4 (RADIOS)"
+    ]
+  }
+}
